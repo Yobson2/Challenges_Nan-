@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,::before,::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Couleurs */
+:root {
+  --primary-color: #4434a5;
+  --background-color: #000000;
+}
+
+/* Police de caractères */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color:var(--background-color) ;
+}
+
+/* Conteneur de la carte */
+.card-simple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+/* Texte */
+.text {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 80%;
+}
+
+.text h1 {
+    width: 100%;
+  font-size: 3.6rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: bold;
+  opacity: 1;
+  transition: animation 1s ease-in-out;
+}
+
+/* Animation des N */
+.n {
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    margin: 0px;
+    opacity: 1;
+  }
+  33.33%  {
+    margin: 100px;
+    opacity: 0.6;
+  }
+  66.66% {
+    margin: 180px;
+    opacity: 1;
+  }
+  100% {
+    margin: 180px;
+    opacity: 1;
+  }
+}
+
+/* Animation de la couleur */
+.card-color {
+  border: none;
+  animation: randomColor 0.7s linear infinite,randomColor 0.8s linear infinite;
+  transition: all 2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card-medium{
+    border: none;
+    animation: randomColor1 0.7s linear infinite;
+    transition: all 2s ease-in-out;
+    width: 50px;
+    height: 50px;
+    
+}
+
+@keyframes randomColor {
+  0% {
+    background-color: #04020d;
+    border-radius: 100%;
+    width: 180px;
+      height: 180px;
+    /* opacity: 0.1; */
+  }
+  33.33% {
+    background-color: #261e59; 
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+  }
+  66.66% {
+    background-color: #1e1940;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;   
+  }
+  
+   100% {
+        background-color:#04020d; 
+        border-radius: 100%;
+        width: 600px;
+        height: 600px;
+    }
+    
+}
+
+@keyframes randomColor1 {
+    0% {
+      background-color: white;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      opacity: 0.1;
+      box-shadow: #04020d;
+    }
+    33.33% {
+      background-color: #261e59; 
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
+      box-shadow: #04020d;
+    }
+    66.66% {
+      background-color: #1e1940;
+      border-radius: 100%;
+      width: 160px;
+      height: 160px; 
+      box-shadow: #04020d;  
+    }
+    
+     100% {
+          background-color:#04020d; 
+          border-radius: 100%;
+          width: 170px;
+          height: 170px;
+          box-shadow: #04020d;
+      }
+
+      
+  }
+  
+  
+  
