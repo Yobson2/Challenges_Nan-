@@ -60,7 +60,7 @@ h2 {
     width: 30%;
     height: 100%;
     padding: 2%;
-    font-size: 2em;
+    font-size: 1.6em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ h2 {
     height: 100%;
     padding: 2%;
     margin-left: 4%;
-    font-size: 2em;
+    font-size: 1.6em;
     display: flex;
     justify-content: center;
     align-items: center;
