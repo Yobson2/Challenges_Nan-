@@ -1,18 +1,10 @@
 
-let a;
-let b;
-let c;
 let delta;
-
 let element=prompt('Entrez les nombres a,b et c :');
 let tab=element.split(' ');
 
-
 if(tab.length === 3 && tab.every((item)=>{return !isNaN(item)})){
-   a=tab[0];
-   b=tab[1];
-   c=tab[2];
-
+   const [a,b,c]=tab;
    delta= b*b - 4*a*c;
    if(delta < 0){
     alert('pas de solution réellle');
