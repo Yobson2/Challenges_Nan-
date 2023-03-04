@@ -49,7 +49,7 @@ h2 {
     margin: 4% auto;
     width: 90%;
     max-width: 500px;
-    height: 10%;
+    height: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,9 +57,9 @@ h2 {
 }
 
 .commandes .commande-add {
-    width: 30%;
+    width: 25%;
     height: 100%;
-    padding: 2%;
+    padding: 4%;
     font-size: 1.6em;
     display: flex;
     justify-content: center;
@@ -67,9 +67,9 @@ h2 {
 }
 
 .commandes .commande-delete {
-    width: 30%;
+    width: 25%;
     height: 100%;
-    padding: 2%;
+    padding: 4%;
     margin-left: 4%;
     font-size: 1.6em;
     display: flex;
