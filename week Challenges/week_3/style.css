@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    background-color: #555;
+}
+
+h2 {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 100px;
+}
+
+.game-bloc {
+    width: 90%;
+    height: 50vh;
+    max-width: 2000px;
+    background-image: url('logo/rendu-3d-illustration_52683-75995.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.game-bloc .content-dés {
+    width: 90%;
+    height: 50%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4% auto;
+    border-radius: 4rem;
+    background: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+
+.commandes {
+    margin: 4% auto;
+    /* background-color: blanchedalmond; */
+    width: 90%;
+    max-width: 500px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.commandes .commande-add {
+    width: 30%;
+    max-width: 150px;
+    height: 100%;
+    padding: 2%;
+    font-size: 2em;
+}
+
+.commandes .commande-delete {
+    width: 30%;
+    max-width: 150px;
+    height: 100%;
+    padding: 2%;
+    margin-left: 4%;
+    font-size: 2em;
+}
+button, button:focus {
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: 2px solid rgb(50, 50, 50);
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+  }
+  
+  button:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+  }
+
+.dice {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 2%;
+    margin: 4% auto;
+    animation-delay: 1s; 
+     transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+.add-animated{
+    animation: rotateDice 0.4s linear;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9rem;  
+    background-color: #555;
+    border-radius: 20px;
+}
+
+.front {
+    transform: translateZ(50px);   
+}
+.back {
+    transform: translateZ(-50px) rotateY(180deg);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+
+@media (max-width: 1177px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    .game-bloc {
+        height: 70vh;
+    }
+
+    .game-bloc .content-dés {
+        height: 60%;
+        margin: 8% auto;
+    }
+    .dice{
+        width: 50px;
+        height: 50px;
+    }
+    .front {
+        transform: translateZ(25px);
+    }
+    .back {
+        transform: translateZ(-25px) rotateY(180deg);
+    }
+    .top {
+        transform: rotateX(90deg) translateZ(25px);
+    }
+    .bottom {
+        transform: rotateX(-90deg) translateZ(25px);
+    }
+    .left {
+        transform: rotateY(-90deg) translateZ(25px);
+    }
+    .right {
+        transform: rotateY(90deg) translateZ(25px);
+    }
+}
+
+@keyframes rotateDice {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+      }
+      100% {
+        transform: rotateX(360deg) rotateY(360deg);
+      }
+  }
