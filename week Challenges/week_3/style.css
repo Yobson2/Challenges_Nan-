@@ -13,12 +13,12 @@ body {
 
 h2 {
     text-align: center;
-    font-size: 6rem;
-    margin-top: 100px;
+    font-size: 5rem;
+    margin-top: 50px;
 }
 
 .game-bloc {
-    width: 90%;
+    width: 60%;
     height: 50vh;
     max-width: 2000px;
     background-image: url('logo/rendu-3d-illustration_52683-75995.webp');
@@ -38,7 +38,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin: 4% auto;
     border-radius: 4rem;
     background: lightgrey;
@@ -63,6 +63,9 @@ h2 {
     height: 100%;
     padding: 2%;
     font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .commandes .commande-delete {
@@ -72,6 +75,9 @@ h2 {
     padding: 2%;
     margin-left: 4%;
     font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button, button:focus {
     font-size: 17px;
@@ -143,7 +149,7 @@ button, button:focus {
 }
 
 
-@media (max-width: 1177px) {
+@media (max-width: 1067px) {
     h2 {
         font-size: 3rem;
     }
@@ -155,6 +161,9 @@ button, button:focus {
     .game-bloc .content-dés {
         height: 60%;
         margin: 8% auto;
+    }
+    .commandes{
+        font-size:0.6rem ;
     }
     .dice{
         width: 50px;
