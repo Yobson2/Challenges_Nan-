@@ -47,7 +47,6 @@ h2 {
 
 .commandes {
     margin: 4% auto;
-    /* background-color: blanchedalmond; */
     width: 90%;
     max-width: 500px;
     height: 10%;
@@ -59,7 +58,6 @@ h2 {
 
 .commandes .commande-add {
     width: 30%;
-    max-width: 150px;
     height: 100%;
     padding: 2%;
     font-size: 2em;
@@ -70,7 +68,6 @@ h2 {
 
 .commandes .commande-delete {
     width: 30%;
-    max-width: 150px;
     height: 100%;
     padding: 2%;
     margin-left: 4%;
@@ -80,7 +77,6 @@ h2 {
     align-items: center;
 }
 button, button:focus {
-    font-size: 17px;
     padding: 10px 25px;
     border-radius: 0.7rem;
     background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
