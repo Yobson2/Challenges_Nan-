@@ -1,0 +1,183 @@
+*,::before,::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1f1f1f;
+    display: flex;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iphone-card{
+ width: 350px;
+ height: 667px;
+  position: absolute;
+  margin: 50px auto;
+  background-color: #94ACC5;
+  border-radius: 50px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8),
+              0 0 20px rgba(0, 0, 0, 0.5);
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ top: 0%;
+ left: 51%;
+ transform: translate(-50,-50%);
+ z-index: 1;
+}
+.iphone {
+    width: 96%;
+    height: 96%;
+    background-color: black;
+    border-radius: 50px;
+    /* margin: 50px auto; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .iphone-screen {
+    width: 97%;
+    height: 97%;
+    /* background-color: blue; */
+    border-radius: 50px;
+  }
+  .iphone-screen>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+  }
+  
+  .iphone-speaker {
+    width: 100px;
+    height: 25px;
+    background-color: black;
+    border-radius: 0 0 16px 16px;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .iphone-camera1 {
+    width: 8px;
+    height: 8px;
+    background-color: #0e132e;;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 78%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  /* behind phone */
+  .iphone-Behind {
+    width: 350px;
+    height: 667px;
+    background-color: #94ACC5;
+    border-radius: 50px;
+    /* margin: 50px auto; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50,-50%);
+  }
+  
+  .iphone-coq {
+    width: 97%;
+    height: 97%;
+    background-color: #94ACC5;
+    border-radius: 50px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8),
+                0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    
+  }
+  
+  .iphone-camera2 {
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    border-radius: 0 0 16px 16px;
+    position: absolute;
+    top: 20px;
+    left: 22%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+  }
+  .iphone-camera2>img{
+   width: 100%;
+   height: 100%; 
+   border-radius: 30px;
+  }
+
+  .iphone-apple{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .iphone-apple>i{
+    width: 100%;
+   height: 100%; 
+   font-size: 5rem;
+   color: #ccc9c4;
+   border-radius: 50%;
+  }
+  
+  .iphone-coq:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #9d9d9d, #4f4f4f);
+    border-radius: 50px;
+    z-index: -1;
+  }
+  
+  .iphone-coq:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background: linear-gradient(to bottom, #f2f2f2, #d8d8d8);
+    border-radius: 40px;
+    z-index: -1;
+   
+  }
+
+  @media screen and (max-width: 649px) {
+    .iphone-card{
+        width: 330px;
+        height: 657px;
+    }
+    .iphone-Behind{
+        width: 330px;
+        height: 657px;
+    }
+    .iphone-camera2{
+        width: 100px;
+        height: 100px;
+    }
+  }
+  
